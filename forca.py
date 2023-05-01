@@ -11,12 +11,12 @@ def play():
     fruits = ("banana", "maça", "uva", "pera", "morango",
               "abacaxi", "goiaba", "melancia", "laranja")
     secret_word = fruits[randrange(0, len(fruits))]
-    secret_word_array = tuple(len(secret_word) * "-")
+    secret_word_array = list(len(secret_word) * "-")
 
     play = bool(True)
-    rightLetters = ()
+    rightLetters = []
 
-    wrongLetters = ()
+    wrongLetters = []
     chances = 7
 
     points = 0
