@@ -1,5 +1,5 @@
 from random import randrange
-from forca.forca_utils import *
+from forca_utils.functions import chanceShow, kick, moreThanOneLetter, logout, win, lose
 
 
 def play():
@@ -16,18 +16,25 @@ def play():
     rightLetters = []
 
     wrongLetters = []
-    errors = 0
     chances = 7
 
+    points = 0
+
     while (play):
-        if win(secret_word, rightLetters):
+        if lose(chances, secret_word):
             break
-        if lose(errors):
-            break
-
         print(f"\nPalavra Secreta:\n{secret_word_array}\n")
+        if win(secret_word, rightLetters):
+            points += 1
+            print(f"Você tem {points} pontos\n")
+            rightLetters = []
+            wrongLetters = []
+            chances = 7
+            secret_word = fruits[randrange(0, fruits.__len__())]
+            secret_word_array = list(secret_word.__len__() * "-")
+            continue
 
-        errorShow(errors, chances, wrongLetters)
+        chanceShow(chances, wrongLetters)
 
         chute = kick()
 
@@ -45,9 +52,7 @@ def play():
             index += 1
         if (chute not in secret_word and chute not in wrongLetters):
             wrongLetters.append(chute)
-            errors += 1
-
-
+            chances -= 1
 
 
 if (__name__ == '__main__'):

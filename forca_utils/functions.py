@@ -11,9 +11,9 @@ def win(secret_word, rightLetters):
         return True
 
 
-def lose(errors):
-    if (errors == 7):
-        print("\nVocê foi enforcado!\n")
+def lose(chances, word):
+    if (chances == 0):
+        print(f"\nVocê foi enforcado, a palavra era {word}\n")
         return True
 
 
@@ -22,11 +22,11 @@ def kick():
     return chute.strip() and chute.lower()
 
 
-def errorShow(errors, chances, wrongLetters):
-    if (errors > 0):
-        print(f"Vocé já errou {errors} vezes de {chances}.\n")
+def chanceShow(chances, wrongLetters):
+    
+    if (chances < 7):
+        print(f"Vocé ainda tem {chances} chances de acertar.\n")
         print(f"Letras erradas:\n{wrongLetters}\n")
-        return True
 
 
 def moreThanOneLetter(kick):

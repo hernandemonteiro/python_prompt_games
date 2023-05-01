@@ -1,5 +1,5 @@
 from random import randrange
-from adivinhacao.InputUserNumber import InputUserNumber
+from adivinhacao_utils.InputUserNumber import InputUserNumber
 
 game = InputUserNumber()
 secret_number = randrange(0, 10)
