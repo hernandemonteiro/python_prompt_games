@@ -5,7 +5,7 @@ def logout(kick):
 
 
 def win(secret_word, rightLetters):
-    if (secret_word.__len__() == rightLetters.__len__()):
+    if (len(secret_word) == len(rightLetters)):
         print(
             f"\nParabéns, você acertou, a palavra é '{secret_word.capitalize()}'\n")
         return True
@@ -23,13 +23,13 @@ def kick():
 
 
 def chanceShow(chances, wrongLetters):
-    
+
     if (chances < 7):
         print(f"Vocé ainda tem {chances} chances de acertar.\n")
         print(f"Letras erradas:\n{wrongLetters}\n")
 
 
 def moreThanOneLetter(kick):
-    if (kick.__len__() > 1):
+    if (len(kick) > 1):
         print("\nVocê deve digitar apenas uma letra.\n")
         return True

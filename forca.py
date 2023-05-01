@@ -6,11 +6,12 @@ def play():
     print('*****************************************')
     print('****** Bem-vindo ao jogo da Forca *******')
     print('*****************************************')
+    print('*** Para sair digite "sair" ou "exit" ***')
 
     fruits = ["banana", "maça", "uva", "pera", "morango",
               "abacaxi", "goiaba", "melancia", "laranja"]
-    secret_word = fruits[randrange(0, fruits.__len__())]
-    secret_word_array = list(secret_word.__len__() * "-")
+    secret_word = fruits[randrange(0, len(fruits))]
+    secret_word_array = list(len(secret_word) * "-")
 
     play = bool(True)
     rightLetters = []
@@ -30,8 +31,8 @@ def play():
             rightLetters = []
             wrongLetters = []
             chances = 7
-            secret_word = fruits[randrange(0, fruits.__len__())]
-            secret_word_array = list(secret_word.__len__() * "-")
+            secret_word = fruits[randrange(0, len(fruits))]
+            secret_word_array = list(len(secret_word) * "-")
             continue
 
         chanceShow(chances, wrongLetters)
