@@ -4,7 +4,7 @@ Este jogo gera um numero entre 0 e 10 e da 7 chances para acertar o numero corre
 
 # How to play:
 
-Para joga-lo basta:
+Para jogar:
 
 - Ter o python3 instalado em sua maquina.
 - Clonar este repositório.
@@ -17,7 +17,7 @@ jogo criado em python que escolhe aleatoriamente uma palvra e da 7 chances de er
 
 # How to play:
 
-Para joga-lo basta:
+Para jogar:
 
 - Ter o python3 instalado em sua maquina.
 - Clonar este repositório.
