@@ -8,10 +8,10 @@ def play():
     print('*****************************************')
     print('*** Para sair digite "sair" ou "exit" ***')
 
-    fruits = ["banana", "maça", "uva", "pera", "morango",
-              "abacaxi", "goiaba", "melancia", "laranja"]
+    fruits = ("banana", "maça", "uva", "pera", "morango",
+              "abacaxi", "goiaba", "melancia", "laranja")
     secret_word = fruits[randrange(0, len(fruits))]
-    secret_word_array = list(len(secret_word) * "-")
+    secret_word_array = tuple(len(secret_word) * "-")
 
     play = bool(True)
     rightLetters = []
