@@ -1,17 +1,31 @@
 # JOGO DE ADIVINHACAO
 
-jogo criado em python que gera um numero entre 0 e 10 e da 7 chances para acertar.
+Este jogo gera um numero entre 0 e 10 e da 7 chances para acertar o numero correto.
 
-Criado para ser jogado no prompt.
+# How to play:
 
-# How to use:
-
-Para usa-lo basta:
+Para joga-lo basta:
 
 - Ter o python3 instalado em sua maquina.
 - Clonar este repositório.
-- Depois executar o arquivo `adivinhacao.py` em seu prompt.
+- Navegar via prompt até a pasta dos arquivos ou abrir a pasta em sua IDE.
+- Depois executar o comando `python3 adivinhacao.py` em seu prompt.
 
-Is Just it!
+# JOGO DA FORCA
 
-Bons jogos!
+jogo criado em python que escolhe aleatoriamente uma palvra e da 7 chances de erro.
+
+# How to play:
+
+Para joga-lo basta:
+
+- Ter o python3 instalado em sua maquina.
+- Clonar este repositório.
+- Navegar via prompt até a pasta dos arquivos ou abrir a pasta em sua IDE.
+- Depois executar o arquivo `python3 forca.py` em seu prompt.
+
+---
+
+## Bons jogos!
+
+- Criados para serem jogados via prompt.
