@@ -14,9 +14,9 @@ def play():
     secret_word_array = tuple(len(secret_word) * "-")
 
     play = bool(True)
-    rightLetters = []
+    rightLetters = ()
 
-    wrongLetters = []
+    wrongLetters = ()
     chances = 7
 
     points = 0
